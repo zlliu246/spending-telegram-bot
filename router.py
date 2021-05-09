@@ -19,10 +19,13 @@ def route(update, context):
     totalspent = sum(list(d.values()))
     averagespent = totalspent / max(d.keys())
 
-    out += f"Total Spent: ${totalspent:.2f}\nAverage Spent Per Day: ${averagespent:.2f}\n\n"
+    out += f"Total Spent: ${totalspent:.2f}\n"
+    out += "Average Spent Per Day: ${averagespent:.2f}\n\n"
 
     for day,spent in d.items():
         out += f"day: {day}, spent: ${spent:.2f}\n"
 
     # telegram bot replies 
     update.message.reply_text(out.strip())
+
+
