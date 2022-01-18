@@ -14,8 +14,6 @@ pip3 install -r requirements.txt
 
 # Getting your Telegram bot token
 
-Short Video Tutorial: https://www.youtube.com/watch?v=xpb54_2LEBk
-
 You need to create a Telegram bot using Telegram's BotFather and get your Token before your code can work.
 
 Put your token in an environmental file (.env) which is ignored by git
